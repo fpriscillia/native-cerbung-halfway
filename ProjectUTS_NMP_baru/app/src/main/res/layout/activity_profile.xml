@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar1"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:keyboardNavigationCluster="true"
+        app:backgroundTint="#F2ECF6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnProfileHome"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#E5DEF5"
+        android:fontFamily="sans-serif-medium"
+        android:paddingVertical="0sp"
+        app:cornerRadius="50sp"
+        app:icon="@drawable/outline_home_24"
+        app:iconGravity="textTop"
+        app:iconPadding="0dp"
+        app:iconTint="#49464F"
+        app:layout_constraintEnd_toStartOf="@+id/btnProfilCreate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottomAppBar1" />
+
+    <Button
+        android:id="@+id/btnProfileProfil"
+        style="@style/Widget.Material3.Button.TextButton.Snackbar"
+        android:layout_width="75dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#E5DEF5"
+        android:clickable="false"
+        android:contextClickable="false"
+        android:fontFamily="sans-serif-medium"
+        android:paddingVertical="0sp"
+        app:cornerRadius="50sp"
+        app:icon="@drawable/outline_person_outline_24"
+        app:iconGravity="textTop"
+        app:iconPadding="0dp"
+        app:iconTint="#49464F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnProfilCreate"
+        app:layout_constraintTop_toTopOf="@+id/bottomAppBar1" />
+
+    <Button
+        android:id="@+id/btnProfilCreate"
+        style="@style/Widget.Material3.Button.TextButton.Snackbar"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:clickable="false"
+        android:contextClickable="false"
+        android:fontFamily="sans-serif-medium"
+        android:paddingVertical="0sp"
+        app:cornerRadius="50sp"
+        app:icon="@drawable/outline_create_24"
+        app:iconGravity="textTop"
+        app:iconPadding="0dp"
+        app:iconTint="#49464F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottomAppBar1" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Create"
+        android:textAlignment="center"
+        android:textColor="#222222"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnProfilCreate" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Home"
+        android:textAlignment="center"
+        android:textColor="#222222"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textView30"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnProfileHome" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Profile"
+        android:textAlignment="center"
+        android:textColor="#222222"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView30"
+        app:layout_constraintTop_toBottomOf="@+id/btnProfileProfil" />
+
+    <Button
+        android:id="@+id/btnChangePass"
+        style="@style/Widget.Material3.Button.IconButton.Filled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#6750A3"
+        android:paddingHorizontal="25dp"
+        android:text="Change Password"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bottomAppBar1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRetypePass"
+        app:layout_constraintVertical_bias="0.181"
+        app:strokeColor="#79747E" />
+
+    <TextView
+        android:id="@+id/lblNewPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="New Password"
+        android:textColor="#6750A3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOldPass" />
+
+    <TextView
+        android:id="@+id/lblRetype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Retype New Password"
+        android:textColor="#6750A3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNewPass" />
+
+    <TextView
+        android:id="@+id/lblOldPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Old Password"
+        android:textColor="#6750A3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/separator" />
+
+    <TextView
+        android:id="@+id/lblNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#E7DDF7"
+        android:fontFamily="sans-serif-medium"
+        android:text="BisaYuk"
+        android:textAlignment="center"
+        android:textColor="#6750A3"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgIcon" />
+
+    <ImageView
+        android:id="@+id/imgIcon"
+        android:layout_width="120dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="40dp"
+        android:background="#E7DDF7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/outline_person_outline_24" />
+
+    <Switch
+        android:id="@+id/switchDark"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Dark Mode"
+        android:textColor="#6750A3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblNama" />
+
+    <Switch
+        android:id="@+id/switchNotif"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Notifications"
+        android:textColor="#6750A3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switchDark" />
+
+    <TextView
+        android:id="@+id/separator"
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@+id/lblOldPass"
+        app:layout_constraintTop_toBottomOf="@+id/switchNotif"
+        app:layout_constraintVertical_bias="0.7"
+        tools:layout_editor_absoluteX="5dp" />
+
+    <EditText
+        android:id="@+id/txtOldPass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblOldPass" />
+
+    <EditText
+        android:id="@+id/txtNewPass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblNewPass" />
+
+    <EditText
+        android:id="@+id/txtRetypePass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblRetype" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

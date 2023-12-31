@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Create3Activity">
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar3"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:keyboardNavigationCluster="true"
+        app:backgroundTint="#F2ECF6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnCreate3Home"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#E5DEF5"
+        android:fontFamily="sans-serif-medium"
+        android:paddingVertical="0sp"
+        app:cornerRadius="50sp"
+        app:icon="@drawable/outline_home_24"
+        app:iconGravity="textTop"
+        app:iconPadding="0dp"
+        app:iconTint="#49464F"
+        app:layout_constraintEnd_toStartOf="@+id/btnCreate3Create"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottomAppBar3" />
+
+    <Button
+        android:id="@+id/btnCreate3Profile"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="77dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#E5DEF5"
+        android:fontFamily="sans-serif-medium"
+        android:paddingVertical="0sp"
+        app:cornerRadius="50sp"
+        app:icon="@drawable/outline_person_outline_24"
+        app:iconGravity="textTop"
+        app:iconPadding="0dp"
+        app:iconTint="#49464F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toEndOf="@+id/btnCreate3Create"
+        app:layout_constraintTop_toTopOf="@+id/bottomAppBar3" />
+
+    <Button
+        android:id="@+id/btnCreate3Create"
+        style="@style/Widget.Material3.Button.TextButton.Snackbar"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#E5DEF5"
+        android:clickable="false"
+        android:contextClickable="false"
+        android:fontFamily="sans-serif-medium"
+        android:paddingVertical="0sp"
+        app:cornerRadius="50sp"
+        app:icon="@drawable/outline_create_24"
+        app:iconGravity="textTop"
+        app:iconPadding="0dp"
+        app:iconTint="#49464F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottomAppBar3" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Home"
+        android:textAlignment="center"
+        android:textColor="#222222"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textView24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCreate3Home" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Create"
+        android:textAlignment="center"
+        android:textColor="#222222"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCreate3Create" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="77dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Profile"
+        android:textAlignment="center"
+        android:textColor="#222222"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView24"
+        app:layout_constraintTop_toBottomOf="@+id/btnCreate3Profile" />
+
+    <TextView
+        android:id="@+id/txtPreviewTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Cerbung Title"
+        android:textColor="#222222"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPreviewSinopsis"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="sans-serif-medium"
+        android:lineSpacingExtra="8sp"
+        android:text="Description or sinopsis"
+        android:textColor="#222222"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPreviewGenre" />
+
+    <TextView
+        android:id="@+id/txtPreviewFirst"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="sans-serif-medium"
+        android:lineSpacingExtra="8sp"
+        android:text="First Paragraph"
+        android:textColor="#222222"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView15" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="24dp"
+        android:background="#222222"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPreviewSinopsis" />
+
+    <Button
+        android:id="@+id/btnPrev3"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="100dp"
+        android:text="Prev"
+        android:textColor="#6750A3"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#79747E" />
+
+    <Button
+        android:id="@+id/btnPublish"
+        style="@style/Widget.Material3.Button.IconButton.Filled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#6750A3"
+        android:paddingHorizontal="25dp"
+        android:text="Publish This Cerbung"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:strokeColor="#79747E" />
+
+    <CheckBox
+        android:id="@+id/checkAgree"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#6750A2"
+        android:fontFamily="sans-serif-medium"
+        android:paddingHorizontal="8dp"
+        android:text="I agree with rules and policies in creating Cerbung. This includes not containing racial slurs, discrimination, religion, advertisement, and politics"
+        android:textColor="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/btnPrev3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPreviewGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="15dp"
+        android:background="#E7DDF7"
+        android:fontFamily="sans-serif-medium"
+        android:paddingHorizontal="15sp"
+        android:paddingVertical="5sp"
+        android:text="Genre"
+        android:textColor="#222222"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPreviewTitle" />
+
+    <TextView
+        android:id="@+id/txtPreviewAccess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:background="#E7DDF7"
+        android:fontFamily="sans-serif-medium"
+        android:paddingHorizontal="15sp"
+        android:paddingVertical="5sp"
+        android:text="Restricted"
+        android:textColor="#222222"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/txtPreviewGenre"
+        app:layout_constraintTop_toBottomOf="@+id/txtPreviewTitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>
